@@ -3,10 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prospect Brief Generator</title>
+    <title>AI Subscription Ecosystem — The Motley Fool</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
-  <body class="bg-gray-50 min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body>
+    <header class="dashboard-header">
+      <div class="header-content">
+        <div class="header-brand">
+          <img src="/logo.gif" alt="The Motley Fool" class="header-logo" />
+          <h1>The Motley Fool</h1>
+          <span class="header-badge">The Day One Build</span>
+        </div>
+        <p class="header-subtitle">AI-Powered Subscription Experience</p>
+      </div>
+    </header>
+
+    <div id="ticker" class="ticker-strip"></div>
+
+    <div id="app">
+      <section id="kpi-bar" class="dashboard-section"></section>
+      <section id="subscriber-overview" class="dashboard-section"></section>
+      <section id="churn-prediction" class="dashboard-section"></section>
+      <section id="smart-segments" class="dashboard-section"></section>
+      <section id="recommendations" class="dashboard-section"></section>
+      <section id="revenue-forecast" class="dashboard-section"></section>
+      <section id="retention-actions" class="dashboard-section"></section>
+    </div>
+
+    <footer class="dashboard-footer">
+      <p>The Motley Fool &mdash; Subscription Intelligence powered by PerformanceLabs</p>
+      <p class="footer-note">Demo data &middot; Not connected to live systems</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
